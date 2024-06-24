@@ -60,9 +60,14 @@ function goTown(){
 function goStore(){
   update(locations[1]);
 }
-function goCave() {}
+function goCave() {
+  update(locations[2]);
+}
 function fightDragon(){}
-function buyHealth() {}
+function buyHealth() {
+  gold -= 10;
+  health += 10;
+}
 function buyWeapon(){}
 function fightSlime(){}
 function fightBeast(){}
