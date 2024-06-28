@@ -196,10 +196,10 @@ function attack() {
   }
 }
 
-function getMonsterAttackValue(level){
+function getMonsterAttackValue(level) {
   const hit = (level * 5) - (Math.floor(Math.random() * xp));
   console.log(hit);
-  return level;
+  return hit;
 }
 
 function dodge() {
@@ -223,7 +223,7 @@ function winGame() {
 }
 
 function restart() {
-  xp = 0;
+  xp = 0;10 
   health = 100;
   gold = 50;
   currentWeaponIndex = 0;
